@@ -1,0 +1,111 @@
+.inventory-page {
+    padding: 25px;
+    min-height: 100vh;
+    background: #f5f7fc;
+    color: #17233f;
+    box-sizing: border-box;
+}
+
+.inventory-header {
+    margin-bottom: 25px;
+}
+
+.inventory-header h1 {
+    margin: 0 0 8px;
+    font-size: 27px;
+}
+
+.inventory-header p {
+    margin: 0;
+    color: #7b8498;
+    font-size: 14px;
+}
+
+.inventory-table-container {
+    overflow-x: auto;
+    background: white;
+    border: 1px solid #e6eaf3;
+    border-radius: 12px;
+}
+
+.inventory-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.inventory-table th {
+    padding: 16px;
+    background: #fafbfe;
+    color: #7b8498;
+    font-size: 13px;
+}
+
+.inventory-table td {
+    padding: 17px 10px;
+    border-top: 1px solid #edf0f6;
+    font-size: 14px;
+}
+
+.inventory-table tbody tr:hover {
+    background: #fafbff;
+}
+
+.inventory-status {
+    display: inline-block;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.inventory-status.in-stock {
+    background: #e1f8eb;
+    color: #16834e;
+}
+
+.inventory-status.low-stock {
+    background: #fff0d4;
+    color: #b8750b;
+}
+
+.inventory-status.out-of-stock {
+    background: #ffe3e3;
+    color: #c53030;
+}
+
+.inventory-update-btn {
+    padding: 9px 15px;
+    background: #5145f5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.inventory-update-btn:hover {
+    background: #4034dc;
+}
+
+.inventory-empty {
+    padding: 25px;
+    text-align: center;
+    color: #7b8498;
+}
+
+@media (max-width: 600px) {
+    .inventory-page {
+        padding: 14px;
+    }
+
+    .inventory-header h1 {
+        font-size: 23px;
+    }
+
+    .inventory-table th,
+    .inventory-table td {
+        padding: 13px 10px;
+        font-size: 12px;
+    }
+}
