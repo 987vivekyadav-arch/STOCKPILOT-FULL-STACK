@@ -18,10 +18,11 @@ import Dashboard from "./Dashboard"
 import Reports from "./Reports"
 
 import Inventory from "./Inventory"
+import Layout from "./Layout"
 
 function App(){
 
-  const[sidebar,setSidebar]=React.useState(true)
+ 
 
 return(
 <BrowserRouter>
@@ -41,6 +42,21 @@ element={<Register/>}
 element={<Login/>}
 />
 
+
+<Route element={<Layout/>}>
+
+
+<Route path="/dashboard"
+element={
+
+<Dashboard/>
+}
+/>
+
+
+
+
+
 <Route path="/addproduct"
 element={<Addproduct/>}
 />
@@ -54,23 +70,13 @@ element={<Addorder/>}
 />
 
 <Route path="/orders"
-element={<Orders/>}
-/>
-
-<Route path="/dashboard"
 element={
-<>
-<Sidebar
-sidebar={sidebar}
-setSidebar={setSidebar}
+
+
+<Orders/>}
 />
-<Dashboard/>
-
-</>
 
 
-}
-/>
 
 <Route path="/reports"
 element={<Reports/>}
@@ -80,6 +86,7 @@ element={<Reports/>}
 element={<Inventory/>}
 />
 
+</Route>
 
 </Routes>
 </BrowserRouter>
