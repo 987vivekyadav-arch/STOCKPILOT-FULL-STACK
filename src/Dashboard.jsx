@@ -12,7 +12,7 @@ function Dashboard() {
     })
 
     useEffect(function() {
-        fetch("http://localhost:5000/dashboard", {
+        fetch("https://stockpilot-full-stack.onrender.com/dashboard", {
             headers: {
                 "authorization": "Bearer " + localStorage.getItem("token")
             }

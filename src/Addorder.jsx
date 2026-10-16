@@ -24,7 +24,7 @@ function Addorder() {
     const [quantity, setQuantity] = React.useState(item?.quantity || "")
 
     useEffect(function() {
-        fetch("http://localhost:5000/addorder", {
+        fetch("https://stockpilot-full-stack.onrender.com/addorder", {
             method: "GET",
             headers: {
                 "authorization": "Bearer " + localStorage.getItem("token")
@@ -91,7 +91,7 @@ function Addorder() {
             return
         }
 
-        fetch("http://localhost:5000/editorder/" + item._id, {
+        fetch("https://stockpilot-full-stack.onrender.com/editorder/" + item._id, {
             method: "PUT",
             headers: {
                 "Content-Type": "application/json",
@@ -133,7 +133,7 @@ function Addorder() {
             return
         }
 
-        fetch("http://localhost:5000/addorder", {
+        fetch("https://stockpilot-full-stack.onrender.com/addorder", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",

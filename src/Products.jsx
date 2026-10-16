@@ -11,7 +11,7 @@ function Products() {
     const [search, setSearch] = React.useState("")
 
     useEffect(function() {
-        fetch("http://localhost:5000/products", {
+        fetch("https://stockpilot-full-stack.onrender.com/products", {
             headers: {
                 "authorization": "Bearer " + localStorage.getItem("token")
             }
@@ -53,7 +53,7 @@ function Products() {
 
 
 function Delete(id){
-fetch("http://localhost:5000/delete/"+id, {
+fetch("https://stockpilot-full-stack.onrender.com/delete/"+id, {
     method:"DELETE",
             headers: {
                 "authorization": "Bearer " + localStorage.getItem("token")

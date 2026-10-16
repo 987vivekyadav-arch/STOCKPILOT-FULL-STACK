@@ -31,7 +31,7 @@ function Reports() {
 
     useEffect(function() {
 
-        fetch("http://localhost:5000/reports", {
+        fetch("https://stockpilot-full-stack.onrender.com/reports", {
             headers: {
                 "authorization": "Bearer " + localStorage.getItem("token")
             }

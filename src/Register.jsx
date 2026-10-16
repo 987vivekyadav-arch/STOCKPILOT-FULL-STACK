@@ -68,7 +68,7 @@ function Register() {
                     <button
                         className="register-button"
                         onClick={function() {
-                            fetch("http://localhost:5000/register", {
+                            fetch("https://stockpilot-full-stack.onrender.com/register", {
                                 method: "POST",
                                 headers: {
                                     "Content-Type": "application/json"

@@ -22,7 +22,7 @@ const[products,setProducts]=React.useState()
 
 
 function Edit(item) {
-    fetch("http://localhost:5000/edit/" + item._id, {
+    fetch("https://stockpilot-full-stack.onrender.com/edit/" + item._id, {
         method: "PUT",
         headers: {
             "Content-Type": "application/json",
@@ -156,7 +156,7 @@ if(item){Edit(item)}else{
 
 
 
-                            fetch("http://localhost:5000/addproduct", {
+                            fetch("https://stockpilot-full-stack.onrender.com/addproduct", {
                                 method: "POST",
                                 headers: {
                                     "Content-Type": "application/json",

@@ -8,7 +8,7 @@ function Orders() {
     const [orders, setOrders] = React.useState([])
 
     useEffect(function() {
-        fetch("http://localhost:5000/orders", {
+        fetch("https://stockpilot-full-stack.onrender.com/orders", {
             headers: {
                 "authorization": "Bearer " + localStorage.getItem("token")
             }
@@ -27,7 +27,7 @@ function Orders() {
 
 
     function Delete(id){
-fetch("http://localhost:5000/deleteorder/"+id, {
+fetch("https://stockpilot-full-stack.onrender.com/deleteorder/"+id, {
     method:"DELETE",
             headers: {
                 "authorization": "Bearer " + localStorage.getItem("token")

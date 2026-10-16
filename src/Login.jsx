@@ -54,7 +54,7 @@ function Login() {
                     <button
                         className="login-button"
                         onClick={function() {
-                            fetch("http://localhost:5000/login", {
+                            fetch("https://stockpilot-full-stack.onrender.com/login", {
                                 method: "POST",
                                 headers: {
                                     "Content-Type": "application/json"

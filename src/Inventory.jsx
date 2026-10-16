@@ -7,7 +7,7 @@ function Inventory() {
 
     useEffect(function() {
 
-        fetch("http://localhost:5000/inventory", {
+        fetch("https://stockpilot-full-stack.onrender.com/inventory", {
             headers: {
                 "authorization": "Bearer " + localStorage.getItem("token")
             }
