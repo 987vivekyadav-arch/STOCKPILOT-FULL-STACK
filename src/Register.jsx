@@ -84,14 +84,9 @@ function Register() {
                             })
                             .then(function(data) {
                                 console.log(data)
-
-                                if (data.success) {
-                                    navigate("/login")
-                                }
+                                navigate("/login")
                             })
-                            .catch(function(error) {
-                                console.log(error)
-                            })
+                              
                         }}
                     >
                         Create Account →
